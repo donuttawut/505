@@ -9,5 +9,4 @@ while($row=mysqli_fetch_assoc($result)){
     echo "ชื่อเล่น =".$row["std_nname"]."<br>";
     echo "อายุ =".$row["std_age"]."<br>";
 }
-
 ?>

@@ -12,22 +12,22 @@ $result=mysqli_query($connect,$sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSERT DATA</title>
-</head>
-<body>
-                    <h3><?php if($result){
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INSERT DATA</title>
+    </head>
+    <body>
+        <h3><?php if($result){
                         echo "บันทึกข้อมูลสำเร็จ";
                     }else{
                         echo "บันทึกข้อมูลไม่สำเร็จ กรุณาลงใหม่อีกครั้ง";
                     }
-                    ?></h3>
-                        <center>
-                            <a class="btn btn-primary btn-lg" href="insertform.php" role="button">เพิ่มข้อมูล</a>
-                            <a class="btn btn-success btn-lg" href="index.php" role="button">กลับหน้าหลัก</a>
-                        </center>
-</body>
+        ?></h3>
+        <center>
+            <a class="btn btn-primary btn-lg" href="insertform.php" role="button">เพิ่มข้อมูล</a>
+            <a class="btn btn-success btn-lg" href="index.php" role="button">กลับหน้าหลัก</a>
+        </center>
+    </body>
 </html>
